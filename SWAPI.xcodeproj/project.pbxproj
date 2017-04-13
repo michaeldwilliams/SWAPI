@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F9E029831E9FDBB1002A1954 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E029821E9FDBB1002A1954 /* Package.swift */; };
 		F9F820B01E9E99050015E286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F820AF1E9E99050015E286 /* AppDelegate.swift */; };
 		F9F820B21E9E99050015E286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F820B11E9E99050015E286 /* ViewController.swift */; };
 		F9F820B51E9E99050015E286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F820B31E9E99050015E286 /* Main.storyboard */; };
@@ -14,6 +15,11 @@
 		F9F820BA1E9E99050015E286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F820B81E9E99050015E286 /* LaunchScreen.storyboard */; };
 		F9F820C51E9E99050015E286 /* SWAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F820C41E9E99050015E286 /* SWAPITests.swift */; };
 		F9F820D01E9E99050015E286 /* SWAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F820CF1E9E99050015E286 /* SWAPIUITests.swift */; };
+		F9F820DE1E9E9A340015E286 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F820DD1E9E9A340015E286 /* HTTPClient.swift */; };
+		F9F820E01E9EBB160015E286 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F820DF1E9EBB160015E286 /* MockURLSession.swift */; };
+		F9F820E21E9EBB6A0015E286 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F820E11E9EBB6A0015E286 /* MockURLSessionDataTask.swift */; };
+		F9F820E51E9EC3D80015E286 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = F9F820E31E9EC18A0015E286 /* people.json */; };
+		F9F820E71E9ECF6D0015E286 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F820E61E9ECF6D0015E286 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F9E029821E9FDBB1002A1954 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		F9F820AC1E9E99050015E286 /* SWAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F820AF1E9E99050015E286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9F820B11E9E99050015E286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +54,11 @@
 		F9F820CB1E9E99050015E286 /* SWAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWAPIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F820CF1E9E99050015E286 /* SWAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWAPIUITests.swift; sourceTree = "<group>"; };
 		F9F820D11E9E99050015E286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9F820DD1E9E9A340015E286 /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		F9F820DF1E9EBB160015E286 /* MockURLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		F9F820E11E9EBB6A0015E286 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
+		F9F820E31E9EC18A0015E286 /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
+		F9F820E61E9ECF6D0015E286 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +89,7 @@
 		F9F820A31E9E99050015E286 = {
 			isa = PBXGroup;
 			children = (
+				F9E029821E9FDBB1002A1954 /* Package.swift */,
 				F9F820AE1E9E99050015E286 /* SWAPI */,
 				F9F820C31E9E99050015E286 /* SWAPITests */,
 				F9F820CE1E9E99050015E286 /* SWAPIUITests */,
@@ -97,6 +110,10 @@
 		F9F820AE1E9E99050015E286 /* SWAPI */ = {
 			isa = PBXGroup;
 			children = (
+				F9F820E61E9ECF6D0015E286 /* Person.swift */,
+				F9F820DF1E9EBB160015E286 /* MockURLSession.swift */,
+				F9F820E11E9EBB6A0015E286 /* MockURLSessionDataTask.swift */,
+				F9F820DD1E9E9A340015E286 /* HTTPClient.swift */,
 				F9F820AF1E9E99050015E286 /* AppDelegate.swift */,
 				F9F820B11E9E99050015E286 /* ViewController.swift */,
 				F9F820B31E9E99050015E286 /* Main.storyboard */,
@@ -111,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				F9F820C41E9E99050015E286 /* SWAPITests.swift */,
+				F9F820E31E9EC18A0015E286 /* people.json */,
 				F9F820C61E9E99050015E286 /* Info.plist */,
 			);
 			path = SWAPITests;
@@ -245,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F820E51E9EC3D80015E286 /* people.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +281,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9F820E71E9ECF6D0015E286 /* Person.swift in Sources */,
 				F9F820B21E9E99050015E286 /* ViewController.swift in Sources */,
+				F9F820E21E9EBB6A0015E286 /* MockURLSessionDataTask.swift in Sources */,
+				F9E029831E9FDBB1002A1954 /* Package.swift in Sources */,
+				F9F820E01E9EBB160015E286 /* MockURLSession.swift in Sources */,
 				F9F820B01E9E99050015E286 /* AppDelegate.swift in Sources */,
+				F9F820DE1E9E9A340015E286 /* HTTPClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +540,7 @@
 				F9F820D61E9E99050015E286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9F820D71E9E99050015E286 /* Build configuration list for PBXNativeTarget "SWAPITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +549,7 @@
 				F9F820D91E9E99050015E286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F9F820DA1E9E99050015E286 /* Build configuration list for PBXNativeTarget "SWAPIUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +558,7 @@
 				F9F820DC1E9E99050015E286 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
