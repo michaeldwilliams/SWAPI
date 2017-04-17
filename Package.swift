@@ -9,12 +9,13 @@
 import PackageDescription
 
 let package = Package(
-    name:"SWAPI",
+    name: "SWAPI",
     targets: [],
     dependencies: [
         .Package(url: "git@github.com:bignerdranch/Freddy.git", majorVersion: 3)
     ],
-    excludes: [
-        "SWAPITests"
+    exclude: [
+        "SWAPITests",
+        "SWAPIUITests"
     ]
 )

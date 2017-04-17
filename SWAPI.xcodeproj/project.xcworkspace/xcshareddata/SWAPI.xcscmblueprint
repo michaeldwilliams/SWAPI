@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "70D2C1ED1E363B2F1A05850D708C17FC4D2F4907",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "70D2C1ED1E363B2F1A05850D708C17FC4D2F4907" : 9223372036854775807,
+    "6ADA245F937D8ED6D99F5A7865E19F5267A169E2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2F69DE38-A90B-4358-ABDC-F4A71899BC06",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "70D2C1ED1E363B2F1A05850D708C17FC4D2F4907" : "SWAPI\/",
+    "6ADA245F937D8ED6D99F5A7865E19F5267A169E2" : "SWAPI\/Packages\/Freddy\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SWAPI",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SWAPI.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:bignerdranch\/Freddy.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6ADA245F937D8ED6D99F5A7865E19F5267A169E2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/michaeldwilliams\/SWAPI.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "70D2C1ED1E363B2F1A05850D708C17FC4D2F4907"
+    }
+  ]
+}

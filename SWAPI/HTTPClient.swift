@@ -14,9 +14,14 @@ struct HTTPClient {
         self.session = session
     }
     
-    func get(_ route:Route, completion: @escaping (Data?, URLResponse?, Error?) -> Void) {
+    func get(_ route:Route, completion: @escaping (Data?, URLResponse?, Swift.Error?) -> Void) {
         guard let url = URL(string: route.rawValue) else { return }
         let task = session.dataTask(with: url, completionHandler: completion)
+        task.resume()
+    }
+    
+    func fetchHomeWorld(for person:Person, completion: @escaping (Data?, URLResponse?, Swift.Error?) -> Void) {
+        let task = session.dataTask(with: person.homeWorldURL, completionHandler: completion)
         task.resume()
     }
 }
@@ -30,5 +35,14 @@ extension HTTPClient {
         case species = "http://swapi.co/api/species/"
         case starships = "http://swapi.co/api/starships/"
         case vehicles = "http://swapi.co/api/vehicles/"
+    }
+}
+
+extension HTTPClient {
+    
+    enum Error: Swift.Error {
+        case noData
+        case couldNotMakeJSON
+        case badURLString(String)
     }
 }

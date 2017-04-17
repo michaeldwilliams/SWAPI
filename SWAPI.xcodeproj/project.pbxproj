@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F9E029831E9FDBB1002A1954 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E029821E9FDBB1002A1954 /* Package.swift */; };
+		F9E029D51E9FE394002A1954 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E029CC1E9FE34E002A1954 /* Freddy.framework */; };
+		F9E029D61E9FE394002A1954 /* Freddy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9E029CC1E9FE34E002A1954 /* Freddy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F9E029DB1EA003D9002A1954 /* PeopleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E029DA1EA003D9002A1954 /* PeopleStore.swift */; };
+		F9E029E11EA4FFED002A1954 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E029E01EA4FFED002A1954 /* Planet.swift */; };
+		F9E029EA1EA504E8002A1954 /* homeWorld.json in Resources */ = {isa = PBXBuildFile; fileRef = F9E029E91EA504E8002A1954 /* homeWorld.json */; };
+		F9E029ED1EA5147B002A1954 /* PlanetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E029EC1EA5147B002A1954 /* PlanetStore.swift */; };
+		F9E029EF1EA529CB002A1954 /* PeopleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E029EE1EA529CB002A1954 /* PeopleOperation.swift */; };
+		F9E029F11EA53D30002A1954 /* HomeWorldOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E029F01EA53D30002A1954 /* HomeWorldOperation.swift */; };
 		F9F820B01E9E99050015E286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F820AF1E9E99050015E286 /* AppDelegate.swift */; };
-		F9F820B21E9E99050015E286 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F820B11E9E99050015E286 /* ViewController.swift */; };
+		F9F820B21E9E99050015E286 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F820B11E9E99050015E286 /* PeopleViewController.swift */; };
 		F9F820B51E9E99050015E286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F820B31E9E99050015E286 /* Main.storyboard */; };
 		F9F820B71E9E99050015E286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9F820B61E9E99050015E286 /* Assets.xcassets */; };
 		F9F820BA1E9E99050015E286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F820B81E9E99050015E286 /* LaunchScreen.storyboard */; };
@@ -23,6 +30,62 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F9E029C71E9FE34E002A1954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E029951E9FE34E002A1954 /* Freddy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB6ADF3E1C23612000D77BF1;
+			remoteInfo = Freddy;
+		};
+		F9E029C91E9FE34E002A1954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E029951E9FE34E002A1954 /* Freddy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB6ADF471C23612000D77BF1;
+			remoteInfo = FreddyTests;
+		};
+		F9E029CB1E9FE34E002A1954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E029951E9FE34E002A1954 /* Freddy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB6ADF1F1C23610B00D77BF1;
+			remoteInfo = MobileFreddy;
+		};
+		F9E029CD1E9FE34E002A1954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E029951E9FE34E002A1954 /* Freddy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB6ADF291C23610B00D77BF1;
+			remoteInfo = MobileFreddyTests;
+		};
+		F9E029CF1E9FE34E002A1954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E029951E9FE34E002A1954 /* Freddy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB6ADF5A1C23612900D77BF1;
+			remoteInfo = TVFreddy;
+		};
+		F9E029D11E9FE34E002A1954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E029951E9FE34E002A1954 /* Freddy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB6ADF631C23612A00D77BF1;
+			remoteInfo = TVFreddyTests;
+		};
+		F9E029D31E9FE34E002A1954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E029951E9FE34E002A1954 /* Freddy.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB6ADF761C23613200D77BF1;
+			remoteInfo = NanoFreddy;
+		};
+		F9E029D71E9FE394002A1954 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9E029951E9FE34E002A1954 /* Freddy.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DB6ADF1E1C23610B00D77BF1;
+			remoteInfo = MobileFreddy;
+		};
 		F9F820C11E9E99050015E286 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F9F820A41E9E99050015E286 /* Project object */;
@@ -39,11 +102,79 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F9E029D91E9FE394002A1954 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F9E029D61E9FE394002A1954 /* Freddy.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		F9E029821E9FDBB1002A1954 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		F9E029851E9FE34E002A1954 /* .cocoadocs.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .cocoadocs.yml; sourceTree = "<group>"; };
+		F9E029861E9FE34E002A1954 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F9E029871E9FE34E002A1954 /* .ruby-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".ruby-version"; sourceTree = "<group>"; };
+		F9E029881E9FE34E002A1954 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		F9E029891E9FE34E002A1954 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		F9E0298B1E9FE34E002A1954 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		F9E0298C1E9FE34E002A1954 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		F9E0298D1E9FE34E002A1954 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		F9E0298E1E9FE34E002A1954 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		F9E0298F1E9FE34E002A1954 /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
+		F9E029901E9FE34E002A1954 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		F9E029921E9FE34E002A1954 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		F9E029931E9FE34E002A1954 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F9E029941E9FE34E002A1954 /* Freddy.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = Freddy.podspec; sourceTree = "<group>"; };
+		F9E029951E9FE34E002A1954 /* Freddy.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Freddy.xcodeproj; sourceTree = "<group>"; };
+		F9E029981E9FE34E002A1954 /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		F9E029991E9FE34E002A1954 /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
+		F9E0299A1E9FE34E002A1954 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F9E0299B1E9FE34E002A1954 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		F9E0299C1E9FE34E002A1954 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F9E0299E1E9FE34E002A1954 /* addErrorBreakpoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addErrorBreakpoint.png; sourceTree = "<group>"; };
+		F9E0299F1E9FE34E002A1954 /* addType.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addType.png; sourceTree = "<group>"; };
+		F9E029A01E9FE34E002A1954 /* editBreakpoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = editBreakpoint.png; sourceTree = "<group>"; };
+		F9E029A11E9FE34E002A1954 /* projectNav_addBreakpoint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = projectNav_addBreakpoint.png; sourceTree = "<group>"; };
+		F9E029A41E9FE34E002A1954 /* publish_docs.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = publish_docs.sh; sourceTree = "<group>"; };
+		F9E029A51E9FE34E002A1954 /* validate_carthage.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = validate_carthage.sh; sourceTree = "<group>"; };
+		F9E029A71E9FE34E002A1954 /* Freddy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Freddy.h; sourceTree = "<group>"; };
+		F9E029A81E9FE34E002A1954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E029A91E9FE34E002A1954 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		F9E029AA1E9FE34E002A1954 /* JSONDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodable.swift; sourceTree = "<group>"; };
+		F9E029AB1E9FE34E002A1954 /* JSONEncodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncodable.swift; sourceTree = "<group>"; };
+		F9E029AC1E9FE34E002A1954 /* JSONEncodingDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncodingDetector.swift; sourceTree = "<group>"; };
+		F9E029AD1E9FE34E002A1954 /* JSONLiteralConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLiteralConvertible.swift; sourceTree = "<group>"; };
+		F9E029AE1E9FE34E002A1954 /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		F9E029AF1E9FE34E002A1954 /* JSONParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParsing.swift; sourceTree = "<group>"; };
+		F9E029B01E9FE34E002A1954 /* JSONSerializing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializing.swift; sourceTree = "<group>"; };
+		F9E029B11E9FE34E002A1954 /* JSONSubscripting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSubscripting.swift; sourceTree = "<group>"; };
+		F9E029B41E9FE34E002A1954 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9E029B51E9FE34E002A1954 /* JSONDecodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDecodableTests.swift; sourceTree = "<group>"; };
+		F9E029B61E9FE34E002A1954 /* JSONEncodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncodableTests.swift; sourceTree = "<group>"; };
+		F9E029B71E9FE34E002A1954 /* JSONEncodingDetectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncodingDetectorTests.swift; sourceTree = "<group>"; };
+		F9E029B81E9FE34E002A1954 /* JSONParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParserTests.swift; sourceTree = "<group>"; };
+		F9E029B91E9FE34E002A1954 /* JSONSerializingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSerializingTests.swift; sourceTree = "<group>"; };
+		F9E029BA1E9FE34E002A1954 /* JSONSubscriptingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONSubscriptingTests.swift; sourceTree = "<group>"; };
+		F9E029BB1E9FE34E002A1954 /* JSONTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTests.swift; sourceTree = "<group>"; };
+		F9E029BC1E9FE34E002A1954 /* JSONTypeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONTypeTests.swift; sourceTree = "<group>"; };
+		F9E029BD1E9FE34E002A1954 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		F9E029BE1E9FE34E002A1954 /* sample.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sample.JSON; sourceTree = "<group>"; };
+		F9E029BF1E9FE34E002A1954 /* sampleNoWhiteSpace.JSON */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = sampleNoWhiteSpace.JSON; sourceTree = "<group>"; };
+		F9E029DA1EA003D9002A1954 /* PeopleStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleStore.swift; sourceTree = "<group>"; };
+		F9E029E01EA4FFED002A1954 /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		F9E029E91EA504E8002A1954 /* homeWorld.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeWorld.json; sourceTree = "<group>"; };
+		F9E029EC1EA5147B002A1954 /* PlanetStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetStore.swift; sourceTree = "<group>"; };
+		F9E029EE1EA529CB002A1954 /* PeopleOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleOperation.swift; sourceTree = "<group>"; };
+		F9E029F01EA53D30002A1954 /* HomeWorldOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorldOperation.swift; sourceTree = "<group>"; };
 		F9F820AC1E9E99050015E286 /* SWAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F820AF1E9E99050015E286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F9F820B11E9E99050015E286 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9F820B11E9E99050015E286 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		F9F820B41E9E99050015E286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9F820B61E9E99050015E286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9F820B91E9E99050015E286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -66,6 +197,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E029D51E9FE394002A1954 /* Freddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,14 +218,158 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F9E029841E9FE34E002A1954 /* Freddy */ = {
+			isa = PBXGroup;
+			children = (
+				F9E029851E9FE34E002A1954 /* .cocoadocs.yml */,
+				F9E029861E9FE34E002A1954 /* .gitignore */,
+				F9E029871E9FE34E002A1954 /* .ruby-version */,
+				F9E029881E9FE34E002A1954 /* .swift-version */,
+				F9E029891E9FE34E002A1954 /* .travis.yml */,
+				F9E0298A1E9FE34E002A1954 /* Configurations */,
+				F9E029901E9FE34E002A1954 /* CONTRIBUTING.md */,
+				F9E029911E9FE34E002A1954 /* fastlane */,
+				F9E029941E9FE34E002A1954 /* Freddy.podspec */,
+				F9E029951E9FE34E002A1954 /* Freddy.xcodeproj */,
+				F9E029981E9FE34E002A1954 /* Gemfile */,
+				F9E029991E9FE34E002A1954 /* Gemfile.lock */,
+				F9E0299A1E9FE34E002A1954 /* LICENSE */,
+				F9E0299B1E9FE34E002A1954 /* Package.swift */,
+				F9E0299C1E9FE34E002A1954 /* README.md */,
+				F9E0299D1E9FE34E002A1954 /* README_Images */,
+				F9E029A21E9FE34E002A1954 /* Resources */,
+				F9E029A61E9FE34E002A1954 /* Sources */,
+				F9E029B21E9FE34E002A1954 /* Tests */,
+			);
+			name = Freddy;
+			path = Packages/Freddy;
+			sourceTree = "<group>";
+		};
+		F9E0298A1E9FE34E002A1954 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				F9E0298B1E9FE34E002A1954 /* Base.xcconfig */,
+				F9E0298C1E9FE34E002A1954 /* Debug.xcconfig */,
+				F9E0298D1E9FE34E002A1954 /* Framework.xcconfig */,
+				F9E0298E1E9FE34E002A1954 /* Release.xcconfig */,
+				F9E0298F1E9FE34E002A1954 /* Tests.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		F9E029911E9FE34E002A1954 /* fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				F9E029921E9FE34E002A1954 /* Fastfile */,
+				F9E029931E9FE34E002A1954 /* README.md */,
+			);
+			path = fastlane;
+			sourceTree = "<group>";
+		};
+		F9E029961E9FE34E002A1954 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9E029C81E9FE34E002A1954 /* Freddy.framework */,
+				F9E029CA1E9FE34E002A1954 /* FreddyTests.xctest */,
+				F9E029CC1E9FE34E002A1954 /* Freddy.framework */,
+				F9E029CE1E9FE34E002A1954 /* MobileFreddyTests.xctest */,
+				F9E029D01E9FE34E002A1954 /* Freddy.framework */,
+				F9E029D21E9FE34E002A1954 /* TVFreddyTests.xctest */,
+				F9E029D41E9FE34E002A1954 /* Freddy.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9E0299D1E9FE34E002A1954 /* README_Images */ = {
+			isa = PBXGroup;
+			children = (
+				F9E0299E1E9FE34E002A1954 /* addErrorBreakpoint.png */,
+				F9E0299F1E9FE34E002A1954 /* addType.png */,
+				F9E029A01E9FE34E002A1954 /* editBreakpoint.png */,
+				F9E029A11E9FE34E002A1954 /* projectNav_addBreakpoint.png */,
+			);
+			path = README_Images;
+			sourceTree = "<group>";
+		};
+		F9E029A21E9FE34E002A1954 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9E029A31E9FE34E002A1954 /* scripts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F9E029A31E9FE34E002A1954 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				F9E029A41E9FE34E002A1954 /* publish_docs.sh */,
+				F9E029A51E9FE34E002A1954 /* validate_carthage.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		F9E029A61E9FE34E002A1954 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F9E029A71E9FE34E002A1954 /* Freddy.h */,
+				F9E029A81E9FE34E002A1954 /* Info.plist */,
+				F9E029A91E9FE34E002A1954 /* JSON.swift */,
+				F9E029AA1E9FE34E002A1954 /* JSONDecodable.swift */,
+				F9E029AB1E9FE34E002A1954 /* JSONEncodable.swift */,
+				F9E029AC1E9FE34E002A1954 /* JSONEncodingDetector.swift */,
+				F9E029AD1E9FE34E002A1954 /* JSONLiteralConvertible.swift */,
+				F9E029AE1E9FE34E002A1954 /* JSONParser.swift */,
+				F9E029AF1E9FE34E002A1954 /* JSONParsing.swift */,
+				F9E029B01E9FE34E002A1954 /* JSONSerializing.swift */,
+				F9E029B11E9FE34E002A1954 /* JSONSubscripting.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F9E029B21E9FE34E002A1954 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F9E029B31E9FE34E002A1954 /* FreddyTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F9E029B31E9FE34E002A1954 /* FreddyTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9E029B41E9FE34E002A1954 /* Info.plist */,
+				F9E029B51E9FE34E002A1954 /* JSONDecodableTests.swift */,
+				F9E029B61E9FE34E002A1954 /* JSONEncodableTests.swift */,
+				F9E029B71E9FE34E002A1954 /* JSONEncodingDetectorTests.swift */,
+				F9E029B81E9FE34E002A1954 /* JSONParserTests.swift */,
+				F9E029B91E9FE34E002A1954 /* JSONSerializingTests.swift */,
+				F9E029BA1E9FE34E002A1954 /* JSONSubscriptingTests.swift */,
+				F9E029BB1E9FE34E002A1954 /* JSONTests.swift */,
+				F9E029BC1E9FE34E002A1954 /* JSONTypeTests.swift */,
+				F9E029BD1E9FE34E002A1954 /* Person.swift */,
+				F9E029BE1E9FE34E002A1954 /* sample.JSON */,
+				F9E029BF1E9FE34E002A1954 /* sampleNoWhiteSpace.JSON */,
+			);
+			path = FreddyTests;
+			sourceTree = "<group>";
+		};
+		F9E029EB1EA5118F002A1954 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F9F820E61E9ECF6D0015E286 /* Person.swift */,
+				F9E029E01EA4FFED002A1954 /* Planet.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		F9F820A31E9E99050015E286 = {
 			isa = PBXGroup;
 			children = (
-				F9E029821E9FDBB1002A1954 /* Package.swift */,
 				F9F820AE1E9E99050015E286 /* SWAPI */,
 				F9F820C31E9E99050015E286 /* SWAPITests */,
 				F9F820CE1E9E99050015E286 /* SWAPIUITests */,
 				F9F820AD1E9E99050015E286 /* Products */,
+				F9E029841E9FE34E002A1954 /* Freddy */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,16 +386,20 @@
 		F9F820AE1E9E99050015E286 /* SWAPI */ = {
 			isa = PBXGroup;
 			children = (
-				F9F820E61E9ECF6D0015E286 /* Person.swift */,
+				F9E029EB1EA5118F002A1954 /* Models */,
+				F9E029EC1EA5147B002A1954 /* PlanetStore.swift */,
 				F9F820DF1E9EBB160015E286 /* MockURLSession.swift */,
 				F9F820E11E9EBB6A0015E286 /* MockURLSessionDataTask.swift */,
 				F9F820DD1E9E9A340015E286 /* HTTPClient.swift */,
 				F9F820AF1E9E99050015E286 /* AppDelegate.swift */,
-				F9F820B11E9E99050015E286 /* ViewController.swift */,
+				F9F820B11E9E99050015E286 /* PeopleViewController.swift */,
 				F9F820B31E9E99050015E286 /* Main.storyboard */,
+				F9E029DA1EA003D9002A1954 /* PeopleStore.swift */,
 				F9F820B61E9E99050015E286 /* Assets.xcassets */,
 				F9F820B81E9E99050015E286 /* LaunchScreen.storyboard */,
 				F9F820BB1E9E99050015E286 /* Info.plist */,
+				F9E029EE1EA529CB002A1954 /* PeopleOperation.swift */,
+				F9E029F01EA53D30002A1954 /* HomeWorldOperation.swift */,
 			);
 			path = SWAPI;
 			sourceTree = "<group>";
@@ -127,6 +407,7 @@
 		F9F820C31E9E99050015E286 /* SWAPITests */ = {
 			isa = PBXGroup;
 			children = (
+				F9E029E91EA504E8002A1954 /* homeWorld.json */,
 				F9F820C41E9E99050015E286 /* SWAPITests.swift */,
 				F9F820E31E9EC18A0015E286 /* people.json */,
 				F9F820C61E9E99050015E286 /* Info.plist */,
@@ -153,10 +434,12 @@
 				F9F820A81E9E99050015E286 /* Sources */,
 				F9F820A91E9E99050015E286 /* Frameworks */,
 				F9F820AA1E9E99050015E286 /* Resources */,
+				F9E029D91E9FE394002A1954 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F9E029D81E9FE394002A1954 /* PBXTargetDependency */,
 			);
 			name = SWAPI;
 			productName = SWAPI;
@@ -239,6 +522,12 @@
 			mainGroup = F9F820A31E9E99050015E286;
 			productRefGroup = F9F820AD1E9E99050015E286 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F9E029961E9FE34E002A1954 /* Products */;
+					ProjectRef = F9E029951E9FE34E002A1954 /* Freddy.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F9F820AB1E9E99050015E286 /* SWAPI */,
@@ -247,6 +536,58 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F9E029C81E9FE34E002A1954 /* Freddy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Freddy.framework;
+			remoteRef = F9E029C71E9FE34E002A1954 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F9E029CA1E9FE34E002A1954 /* FreddyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FreddyTests.xctest;
+			remoteRef = F9E029C91E9FE34E002A1954 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F9E029CC1E9FE34E002A1954 /* Freddy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Freddy.framework;
+			remoteRef = F9E029CB1E9FE34E002A1954 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F9E029CE1E9FE34E002A1954 /* MobileFreddyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MobileFreddyTests.xctest;
+			remoteRef = F9E029CD1E9FE34E002A1954 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F9E029D01E9FE34E002A1954 /* Freddy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Freddy.framework;
+			remoteRef = F9E029CF1E9FE34E002A1954 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F9E029D21E9FE34E002A1954 /* TVFreddyTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TVFreddyTests.xctest;
+			remoteRef = F9E029D11E9FE34E002A1954 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F9E029D41E9FE34E002A1954 /* Freddy.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Freddy.framework;
+			remoteRef = F9E029D31E9FE34E002A1954 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F9F820AA1E9E99050015E286 /* Resources */ = {
@@ -264,6 +605,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9F820E51E9EC3D80015E286 /* people.json in Resources */,
+				F9E029EA1EA504E8002A1954 /* homeWorld.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,10 +623,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9E029DB1EA003D9002A1954 /* PeopleStore.swift in Sources */,
 				F9F820E71E9ECF6D0015E286 /* Person.swift in Sources */,
-				F9F820B21E9E99050015E286 /* ViewController.swift in Sources */,
+				F9F820B21E9E99050015E286 /* PeopleViewController.swift in Sources */,
+				F9E029E11EA4FFED002A1954 /* Planet.swift in Sources */,
+				F9E029EF1EA529CB002A1954 /* PeopleOperation.swift in Sources */,
 				F9F820E21E9EBB6A0015E286 /* MockURLSessionDataTask.swift in Sources */,
-				F9E029831E9FDBB1002A1954 /* Package.swift in Sources */,
+				F9E029F11EA53D30002A1954 /* HomeWorldOperation.swift in Sources */,
+				F9E029ED1EA5147B002A1954 /* PlanetStore.swift in Sources */,
 				F9F820E01E9EBB160015E286 /* MockURLSession.swift in Sources */,
 				F9F820B01E9E99050015E286 /* AppDelegate.swift in Sources */,
 				F9F820DE1E9E9A340015E286 /* HTTPClient.swift in Sources */,
@@ -310,6 +656,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F9E029D81E9FE394002A1954 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MobileFreddy;
+			targetProxy = F9E029D71E9FE394002A1954 /* PBXContainerItemProxy */;
+		};
 		F9F820C21E9E99050015E286 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F9F820AB1E9E99050015E286 /* SWAPI */;
@@ -440,6 +791,7 @@
 		F9F820D51E9E99050015E286 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 83CMDN6MCP;
 				INFOPLIST_FILE = SWAPI/Info.plist;
@@ -453,6 +805,7 @@
 		F9F820D61E9E99050015E286 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 83CMDN6MCP;
 				INFOPLIST_FILE = SWAPI/Info.plist;

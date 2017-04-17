@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Freddy
 
 struct Person {
     let name: String
@@ -23,39 +24,43 @@ struct Person {
     let vehiclesURLs: [URL]
     let starShipsURLs: [URL]
     let url: URL
-    
-    static func from(json: [String:Any]) -> Person? {
-        guard let name = json["name"] as? String else { return nil }
-        guard let heightString = json["height"] as? String,
-            let height = Int(heightString) else { return nil }
-        guard let massString = json["mass"] as? String,
-            let mass = Int(massString) else { return nil }
-        guard let hairColor = json["hair_color"] as? String else { return nil }
-        guard let skinColor = json["skin_color"] as? String else { return nil }
-        guard let eyeColor = json["eye_color"] as? String else { return nil }
-        guard let birthYear = json["birth_year"] as? String else { return nil }
-        guard let gender = json["gender"] as? String else { return nil }
-        guard let homeWorldURLString = json["homeworld"] as? String,
-            let homeWorldURL = URL(string: homeWorldURLString) else { return nil }
-        guard let filmURLStrings = json["films"] as? [String] else { return nil }
-        guard let speciesURLStrings = json["species"] as? [String] else { return nil }
-        guard let vehiclesURLStrings = json["vehicles"] as? [String] else { return nil }
-        guard let starshipsURLStrings = json["starships"] as? [String] else { return nil }
-        guard let urlString = json["url"] as? String, let url = URL(string: urlString) else { return nil }
-        
-        return Person(name: name,
-                      height: height,
-                      mass: mass,
-                      hairColor: hairColor,
-                      skinColor: skinColor,
-                      eyeColor: eyeColor,
-                      birthYear: birthYear,
-                      gender: gender,
-                      homeWorldURL: homeWorldURL,
-                      filmURLs: filmURLStrings.flatMap(URL.init(string:)),
-                      speciesURL: speciesURLStrings.flatMap(URL.init(string:)),
-                      vehiclesURLs: vehiclesURLStrings.flatMap(URL.init(string:)),
-                      starShipsURLs: starshipsURLStrings.flatMap(URL.init(string:)),
-                      url: url)
+
+}
+
+extension Person: JSONDecodable {
+    init(json: JSON) throws {
+        name = try json.getString(at: "name")
+        height = Int(try json.getString(at: "height"))!
+        mass = Int(try json.getString(at: "mass"))!
+        hairColor = try json.getString(at: "hair_color")
+        skinColor = try json.getString(at: "skin_color")
+        eyeColor = try json.getString(at: "eye_color")
+        birthYear = try json.getString(at: "birth_year")
+        gender = try json.getString(at: "gender")
+        homeWorldURL = URL(string: try json.getString(at: "homeworld"))!
+        filmURLs = try json.getArray(at: "films").flatMap { URL(string: try $0.getString()) }
+        speciesURL = try json.getArray(at: "species").flatMap { URL(string: try $0.getString()) }
+        vehiclesURLs = try json.getArray(at: "vehicles").flatMap { URL(string: try $0.getString()) }
+        starShipsURLs = try json.getArray(at: "starships").flatMap { URL(string: try $0.getString()) }
+        url = URL(string: try json.getString(at: "url"))!
+    }
+}
+
+extension Person: Equatable {
+    static func == (lhs:Person, rhs:Person) -> Bool {
+        return lhs.name == rhs.name &&
+            lhs.height == rhs.height &&
+            lhs.mass == rhs.mass &&
+            lhs.hairColor == rhs.hairColor &&
+            lhs.skinColor == rhs.skinColor &&
+            lhs.eyeColor == rhs.eyeColor &&
+            lhs.birthYear == rhs.birthYear &&
+            lhs.gender == rhs.gender &&
+            lhs.homeWorldURL == rhs.homeWorldURL &&
+            lhs.filmURLs == rhs.filmURLs &&
+            lhs.speciesURL == rhs.speciesURL &&
+            lhs.vehiclesURLs == rhs.vehiclesURLs &&
+            lhs.starShipsURLs == rhs.starShipsURLs &&
+            lhs.url == rhs.url
     }
 }
