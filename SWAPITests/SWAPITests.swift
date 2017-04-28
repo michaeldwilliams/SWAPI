@@ -156,4 +156,5 @@ fileprivate class MockSession: MockURLSession {
 
 fileprivate class MockDataTask: MockURLSessionDataTask {
     func resume() {}
+    func cancel() {}
 }

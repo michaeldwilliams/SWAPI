@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F915C0C11EAE841D00199ED5 /* Deferred.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F915C0B81EAE83F200199ED5 /* Deferred.framework */; };
+		F915C0C21EAE841D00199ED5 /* Deferred.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F915C0B81EAE83F200199ED5 /* Deferred.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F970A5AD1EB3A88600F4BF02 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5AC1EB3A88600F4BF02 /* RootViewController.swift */; };
+		F970A5B61EB3AE4300F4BF02 /* PlanetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5B51EB3AE4300F4BF02 /* PlanetsViewController.swift */; };
+		F970A5B81EB3B0D300F4BF02 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5B71EB3B0D300F4BF02 /* AlertPresenter.swift */; };
+		F970A5BA1EB3B52600F4BF02 /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5B91EB3B52600F4BF02 /* PersonDetailViewController.swift */; };
+		F970A5BC1EB3B66B00F4BF02 /* PlanetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5BB1EB3B66B00F4BF02 /* PlanetDetailViewController.swift */; };
+		F970A5BE1EB3BC4200F4BF02 /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5BD1EB3BC4200F4BF02 /* SegueHandler.swift */; };
+		F970A5C11EB3C29400F4BF02 /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F970A5BF1EB3C29400F4BF02 /* People.storyboard */; };
+		F970A5C41EB3C2C900F4BF02 /* Planets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F970A5C21EB3C2C900F4BF02 /* Planets.storyboard */; };
 		F9E029D51E9FE394002A1954 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E029CC1E9FE34E002A1954 /* Freddy.framework */; };
 		F9E029D61E9FE394002A1954 /* Freddy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9E029CC1E9FE34E002A1954 /* Freddy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F9E029DB1EA003D9002A1954 /* PeopleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E029DA1EA003D9002A1954 /* PeopleStore.swift */; };
 		F9E029E11EA4FFED002A1954 /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E029E01EA4FFED002A1954 /* Planet.swift */; };
 		F9E029EA1EA504E8002A1954 /* homeWorld.json in Resources */ = {isa = PBXBuildFile; fileRef = F9E029E91EA504E8002A1954 /* homeWorld.json */; };
 		F9E029ED1EA5147B002A1954 /* PlanetStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E029EC1EA5147B002A1954 /* PlanetStore.swift */; };
-		F9E029EF1EA529CB002A1954 /* PeopleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E029EE1EA529CB002A1954 /* PeopleOperation.swift */; };
-		F9E029F11EA53D30002A1954 /* HomeWorldOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E029F01EA53D30002A1954 /* HomeWorldOperation.swift */; };
 		F9F820B01E9E99050015E286 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F820AF1E9E99050015E286 /* AppDelegate.swift */; };
 		F9F820B21E9E99050015E286 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F820B11E9E99050015E286 /* PeopleViewController.swift */; };
 		F9F820B51E9E99050015E286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9F820B31E9E99050015E286 /* Main.storyboard */; };
@@ -30,6 +38,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F915C0B71EAE83F200199ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F915C06C1EAE83F200199ED5 /* Deferred.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB524C711D851E3800DDF16D;
+			remoteInfo = Deferred;
+		};
+		F915C0B91EAE83F200199ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F915C06C1EAE83F200199ED5 /* Deferred.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DB524C7A1D851E3800DDF16D;
+			remoteInfo = DeferredTests;
+		};
+		F915C0C31EAE841D00199ED5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F915C06C1EAE83F200199ED5 /* Deferred.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DB524C701D851E3800DDF16D;
+			remoteInfo = Deferred;
+		};
 		F9E029C71E9FE34E002A1954 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F9E029951E9FE34E002A1954 /* Freddy.xcodeproj */;
@@ -110,6 +139,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				F9E029D61E9FE394002A1954 /* Freddy.framework in Embed Frameworks */,
+				F915C0C21EAE841D00199ED5 /* Deferred.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,6 +147,94 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F915C0521EAE83F200199ED5 /* .cocoadocs.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .cocoadocs.yml; sourceTree = "<group>"; };
+		F915C0551EAE83F200199ED5 /* deferred_readme_set_version.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = deferred_readme_set_version.rb; sourceTree = "<group>"; };
+		F915C0561EAE83F200199ED5 /* podspec_set_version.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = podspec_set_version.rb; sourceTree = "<group>"; };
+		F915C0571EAE83F200199ED5 /* publish_gh_pages.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = publish_gh_pages.rb; sourceTree = "<group>"; };
+		F915C0581EAE83F200199ED5 /* version_bump_xcconfig.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = version_bump_xcconfig.rb; sourceTree = "<group>"; };
+		F915C0591EAE83F200199ED5 /* Fastfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fastfile; sourceTree = "<group>"; };
+		F915C05A1EAE83F200199ED5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F915C05B1EAE83F200199ED5 /* report.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = report.xml; sourceTree = "<group>"; };
+		F915C05D1EAE83F200199ED5 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		F915C05E1EAE83F200199ED5 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		F915C05F1EAE83F200199ED5 /* PULL_REQUEST_TEMPLATE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PULL_REQUEST_TEMPLATE.md; sourceTree = "<group>"; };
+		F915C0601EAE83F200199ED5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		F915C0611EAE83F200199ED5 /* .jazzy.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .jazzy.yml; sourceTree = "<group>"; };
+		F915C0621EAE83F200199ED5 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		F915C0631EAE83F200199ED5 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		F915C0641EAE83F200199ED5 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		F915C0651EAE83F200199ED5 /* BNRDeferred.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = BNRDeferred.podspec; sourceTree = "<group>"; };
+		F915C0671EAE83F200199ED5 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		F915C0681EAE83F200199ED5 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		F915C0691EAE83F200199ED5 /* Framework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Framework.xcconfig; sourceTree = "<group>"; };
+		F915C06A1EAE83F200199ED5 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		F915C06B1EAE83F200199ED5 /* Tests.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tests.xcconfig; sourceTree = "<group>"; };
+		F915C06C1EAE83F200199ED5 /* Deferred.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Deferred.xcodeproj; sourceTree = "<group>"; };
+		F915C0711EAE83F200199ED5 /* Basic Tasks.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Basic Tasks.md"; sourceTree = "<group>"; };
+		F915C0721EAE83F200199ED5 /* Getting Started.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Getting Started.md"; sourceTree = "<group>"; };
+		F915C0731EAE83F200199ED5 /* Mastering The Future Type.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Mastering The Future Type.md"; sourceTree = "<group>"; };
+		F915C0741EAE83F200199ED5 /* Why Deferred?.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Why Deferred?.md"; sourceTree = "<group>"; };
+		F915C0751EAE83F200199ED5 /* Intuition.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Intuition.md; sourceTree = "<group>"; };
+		F915C0761EAE83F200199ED5 /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		F915C0771EAE83F200199ED5 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		F915C0781EAE83F200199ED5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F915C07B1EAE83F200199ED5 /* Empty.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = Empty.c; sourceTree = "<group>"; };
+		F915C07D1EAE83F200199ED5 /* Atomics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Atomics.h; sourceTree = "<group>"; };
+		F915C07E1EAE83F200199ED5 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		F915C0801EAE83F200199ED5 /* Deferred.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deferred.swift; sourceTree = "<group>"; };
+		F915C0811EAE83F200199ED5 /* Executor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Executor.swift; sourceTree = "<group>"; };
+		F915C0821EAE83F200199ED5 /* ExistentialFuture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistentialFuture.swift; sourceTree = "<group>"; };
+		F915C0831EAE83F200199ED5 /* Future.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Future.swift; sourceTree = "<group>"; };
+		F915C0841EAE83F200199ED5 /* FutureCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureCollections.swift; sourceTree = "<group>"; };
+		F915C0851EAE83F200199ED5 /* FutureComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureComposition.swift; sourceTree = "<group>"; };
+		F915C0861EAE83F200199ED5 /* FutureEveryMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureEveryMap.swift; sourceTree = "<group>"; };
+		F915C0871EAE83F200199ED5 /* FutureIgnore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureIgnore.swift; sourceTree = "<group>"; };
+		F915C0881EAE83F200199ED5 /* Locking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locking.swift; sourceTree = "<group>"; };
+		F915C0891EAE83F200199ED5 /* Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Promise.swift; sourceTree = "<group>"; };
+		F915C08A1EAE83F200199ED5 /* Protected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protected.swift; sourceTree = "<group>"; };
+		F915C08B1EAE83F200199ED5 /* Deferred.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Deferred.h; sourceTree = "<group>"; };
+		F915C08C1EAE83F200199ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F915C08D1EAE83F200199ED5 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		F915C08F1EAE83F200199ED5 /* Either.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Either.swift; sourceTree = "<group>"; };
+		F915C0901EAE83F200199ED5 /* EitherRecovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EitherRecovery.swift; sourceTree = "<group>"; };
+		F915C0911EAE83F200199ED5 /* TaskResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskResult.swift; sourceTree = "<group>"; };
+		F915C0931EAE83F200199ED5 /* ExistentialTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistentialTask.swift; sourceTree = "<group>"; };
+		F915C0941EAE83F200199ED5 /* ResultFuture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultFuture.swift; sourceTree = "<group>"; };
+		F915C0951EAE83F200199ED5 /* ResultPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPromise.swift; sourceTree = "<group>"; };
+		F915C0961EAE83F200199ED5 /* TaskAndThen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAndThen.swift; sourceTree = "<group>"; };
+		F915C0971EAE83F200199ED5 /* TaskCollections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCollections.swift; sourceTree = "<group>"; };
+		F915C0981EAE83F200199ED5 /* TaskGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroup.swift; sourceTree = "<group>"; };
+		F915C0991EAE83F200199ED5 /* TaskIgnore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskIgnore.swift; sourceTree = "<group>"; };
+		F915C09A1EAE83F200199ED5 /* TaskMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskMap.swift; sourceTree = "<group>"; };
+		F915C09B1EAE83F200199ED5 /* TaskProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskProgress.swift; sourceTree = "<group>"; };
+		F915C09C1EAE83F200199ED5 /* TaskRecovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRecovery.swift; sourceTree = "<group>"; };
+		F915C09D1EAE83F200199ED5 /* TaskWorkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWorkItem.swift; sourceTree = "<group>"; };
+		F915C09F1EAE83F200199ED5 /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
+		F915C0A21EAE83F200199ED5 /* DeferredTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeferredTests.swift; sourceTree = "<group>"; };
+		F915C0A31EAE83F200199ED5 /* ExistentialFutureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistentialFutureTests.swift; sourceTree = "<group>"; };
+		F915C0A41EAE83F200199ED5 /* FutureCustomExecutorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureCustomExecutorTests.swift; sourceTree = "<group>"; };
+		F915C0A51EAE83F200199ED5 /* FutureIgnoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureIgnoreTests.swift; sourceTree = "<group>"; };
+		F915C0A61EAE83F200199ED5 /* FutureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FutureTests.swift; sourceTree = "<group>"; };
+		F915C0A71EAE83F200199ED5 /* LockingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockingTests.swift; sourceTree = "<group>"; };
+		F915C0A81EAE83F200199ED5 /* ProtectedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedTests.swift; sourceTree = "<group>"; };
+		F915C0A91EAE83F200199ED5 /* SwiftBugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftBugTests.swift; sourceTree = "<group>"; };
+		F915C0AA1EAE83F200199ED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F915C0AB1EAE83F200199ED5 /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		F915C0AD1EAE83F200199ED5 /* ResultRecoveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultRecoveryTests.swift; sourceTree = "<group>"; };
+		F915C0AE1EAE83F200199ED5 /* TaskResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskResultTests.swift; sourceTree = "<group>"; };
+		F915C0AF1EAE83F200199ED5 /* VoidResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoidResultTests.swift; sourceTree = "<group>"; };
+		F915C0B11EAE83F200199ED5 /* TaskComprehensiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskComprehensiveTests.swift; sourceTree = "<group>"; };
+		F915C0B21EAE83F200199ED5 /* TaskGroupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskGroupTests.swift; sourceTree = "<group>"; };
+		F915C0B31EAE83F200199ED5 /* TaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTests.swift; sourceTree = "<group>"; };
+		F915C0B41EAE83F200199ED5 /* TaskWorkItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskWorkItemTests.swift; sourceTree = "<group>"; };
+		F970A5AC1EB3A88600F4BF02 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		F970A5B51EB3AE4300F4BF02 /* PlanetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetsViewController.swift; sourceTree = "<group>"; };
+		F970A5B71EB3B0D300F4BF02 /* AlertPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		F970A5B91EB3B52600F4BF02 /* PersonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		F970A5BB1EB3B66B00F4BF02 /* PlanetDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetDetailViewController.swift; sourceTree = "<group>"; };
+		F970A5BD1EB3BC4200F4BF02 /* SegueHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandler.swift; sourceTree = "<group>"; };
+		F970A5C01EB3C29400F4BF02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/People.storyboard; sourceTree = "<group>"; };
+		F970A5C31EB3C2C900F4BF02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Planets.storyboard; sourceTree = "<group>"; };
 		F9E029851E9FE34E002A1954 /* .cocoadocs.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .cocoadocs.yml; sourceTree = "<group>"; };
 		F9E029861E9FE34E002A1954 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F9E029871E9FE34E002A1954 /* .ruby-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".ruby-version"; sourceTree = "<group>"; };
@@ -170,8 +288,6 @@
 		F9E029E01EA4FFED002A1954 /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
 		F9E029E91EA504E8002A1954 /* homeWorld.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = homeWorld.json; sourceTree = "<group>"; };
 		F9E029EC1EA5147B002A1954 /* PlanetStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetStore.swift; sourceTree = "<group>"; };
-		F9E029EE1EA529CB002A1954 /* PeopleOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleOperation.swift; sourceTree = "<group>"; };
-		F9E029F01EA53D30002A1954 /* HomeWorldOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWorldOperation.swift; sourceTree = "<group>"; };
 		F9F820AC1E9E99050015E286 /* SWAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9F820AF1E9E99050015E286 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9F820B11E9E99050015E286 /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
@@ -198,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9E029D51E9FE394002A1954 /* Freddy.framework in Frameworks */,
+				F915C0C11EAE841D00199ED5 /* Deferred.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +335,239 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F915C0511EAE83F200199ED5 /* Deferred */ = {
+			isa = PBXGroup;
+			children = (
+				F915C0521EAE83F200199ED5 /* .cocoadocs.yml */,
+				F915C0531EAE83F200199ED5 /* .fastlane */,
+				F915C05C1EAE83F200199ED5 /* .github */,
+				F915C0601EAE83F200199ED5 /* .gitignore */,
+				F915C0611EAE83F200199ED5 /* .jazzy.yml */,
+				F915C0621EAE83F200199ED5 /* .swift-version */,
+				F915C0631EAE83F200199ED5 /* .swiftlint.yml */,
+				F915C0641EAE83F200199ED5 /* .travis.yml */,
+				F915C0651EAE83F200199ED5 /* BNRDeferred.podspec */,
+				F915C0661EAE83F200199ED5 /* Configurations */,
+				F915C06C1EAE83F200199ED5 /* Deferred.xcodeproj */,
+				F915C06F1EAE83F200199ED5 /* Documentation */,
+				F915C0761EAE83F200199ED5 /* LICENSE.txt */,
+				F915C0771EAE83F200199ED5 /* Package.swift */,
+				F915C0781EAE83F200199ED5 /* README.md */,
+				F915C0791EAE83F200199ED5 /* Sources */,
+				F915C0A01EAE83F200199ED5 /* Tests */,
+			);
+			name = Deferred;
+			path = Packages/Deferred;
+			sourceTree = "<group>";
+		};
+		F915C0531EAE83F200199ED5 /* .fastlane */ = {
+			isa = PBXGroup;
+			children = (
+				F915C0541EAE83F200199ED5 /* actions */,
+				F915C0591EAE83F200199ED5 /* Fastfile */,
+				F915C05A1EAE83F200199ED5 /* README.md */,
+				F915C05B1EAE83F200199ED5 /* report.xml */,
+			);
+			path = .fastlane;
+			sourceTree = "<group>";
+		};
+		F915C0541EAE83F200199ED5 /* actions */ = {
+			isa = PBXGroup;
+			children = (
+				F915C0551EAE83F200199ED5 /* deferred_readme_set_version.rb */,
+				F915C0561EAE83F200199ED5 /* podspec_set_version.rb */,
+				F915C0571EAE83F200199ED5 /* publish_gh_pages.rb */,
+				F915C0581EAE83F200199ED5 /* version_bump_xcconfig.rb */,
+			);
+			path = actions;
+			sourceTree = "<group>";
+		};
+		F915C05C1EAE83F200199ED5 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				F915C05D1EAE83F200199ED5 /* CODE_OF_CONDUCT.md */,
+				F915C05E1EAE83F200199ED5 /* CONTRIBUTING.md */,
+				F915C05F1EAE83F200199ED5 /* PULL_REQUEST_TEMPLATE.md */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		F915C0661EAE83F200199ED5 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				F915C0671EAE83F200199ED5 /* Base.xcconfig */,
+				F915C0681EAE83F200199ED5 /* Debug.xcconfig */,
+				F915C0691EAE83F200199ED5 /* Framework.xcconfig */,
+				F915C06A1EAE83F200199ED5 /* Release.xcconfig */,
+				F915C06B1EAE83F200199ED5 /* Tests.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		F915C06D1EAE83F200199ED5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F915C0B81EAE83F200199ED5 /* Deferred.framework */,
+				F915C0BA1EAE83F200199ED5 /* DeferredTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F915C06F1EAE83F200199ED5 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+				F915C0701EAE83F200199ED5 /* Guide */,
+				F915C0751EAE83F200199ED5 /* Intuition.md */,
+			);
+			path = Documentation;
+			sourceTree = "<group>";
+		};
+		F915C0701EAE83F200199ED5 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				F915C0711EAE83F200199ED5 /* Basic Tasks.md */,
+				F915C0721EAE83F200199ED5 /* Getting Started.md */,
+				F915C0731EAE83F200199ED5 /* Mastering The Future Type.md */,
+				F915C0741EAE83F200199ED5 /* Why Deferred?.md */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		F915C0791EAE83F200199ED5 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F915C07A1EAE83F200199ED5 /* Atomics */,
+				F915C07F1EAE83F200199ED5 /* Deferred */,
+				F915C08B1EAE83F200199ED5 /* Deferred.h */,
+				F915C08C1EAE83F200199ED5 /* Info.plist */,
+				F915C08D1EAE83F200199ED5 /* module.modulemap */,
+				F915C08E1EAE83F200199ED5 /* Result */,
+				F915C0921EAE83F200199ED5 /* Task */,
+				F915C09E1EAE83F200199ED5 /* TestSupport */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F915C07A1EAE83F200199ED5 /* Atomics */ = {
+			isa = PBXGroup;
+			children = (
+				F915C07B1EAE83F200199ED5 /* Empty.c */,
+				F915C07C1EAE83F200199ED5 /* include */,
+			);
+			path = Atomics;
+			sourceTree = "<group>";
+		};
+		F915C07C1EAE83F200199ED5 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				F915C07D1EAE83F200199ED5 /* Atomics.h */,
+				F915C07E1EAE83F200199ED5 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		F915C07F1EAE83F200199ED5 /* Deferred */ = {
+			isa = PBXGroup;
+			children = (
+				F915C0801EAE83F200199ED5 /* Deferred.swift */,
+				F915C0811EAE83F200199ED5 /* Executor.swift */,
+				F915C0821EAE83F200199ED5 /* ExistentialFuture.swift */,
+				F915C0831EAE83F200199ED5 /* Future.swift */,
+				F915C0841EAE83F200199ED5 /* FutureCollections.swift */,
+				F915C0851EAE83F200199ED5 /* FutureComposition.swift */,
+				F915C0861EAE83F200199ED5 /* FutureEveryMap.swift */,
+				F915C0871EAE83F200199ED5 /* FutureIgnore.swift */,
+				F915C0881EAE83F200199ED5 /* Locking.swift */,
+				F915C0891EAE83F200199ED5 /* Promise.swift */,
+				F915C08A1EAE83F200199ED5 /* Protected.swift */,
+			);
+			path = Deferred;
+			sourceTree = "<group>";
+		};
+		F915C08E1EAE83F200199ED5 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				F915C08F1EAE83F200199ED5 /* Either.swift */,
+				F915C0901EAE83F200199ED5 /* EitherRecovery.swift */,
+				F915C0911EAE83F200199ED5 /* TaskResult.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		F915C0921EAE83F200199ED5 /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				F915C0931EAE83F200199ED5 /* ExistentialTask.swift */,
+				F915C0941EAE83F200199ED5 /* ResultFuture.swift */,
+				F915C0951EAE83F200199ED5 /* ResultPromise.swift */,
+				F915C0961EAE83F200199ED5 /* TaskAndThen.swift */,
+				F915C0971EAE83F200199ED5 /* TaskCollections.swift */,
+				F915C0981EAE83F200199ED5 /* TaskGroup.swift */,
+				F915C0991EAE83F200199ED5 /* TaskIgnore.swift */,
+				F915C09A1EAE83F200199ED5 /* TaskMap.swift */,
+				F915C09B1EAE83F200199ED5 /* TaskProgress.swift */,
+				F915C09C1EAE83F200199ED5 /* TaskRecovery.swift */,
+				F915C09D1EAE83F200199ED5 /* TaskWorkItem.swift */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		F915C09E1EAE83F200199ED5 /* TestSupport */ = {
+			isa = PBXGroup;
+			children = (
+				F915C09F1EAE83F200199ED5 /* Fixtures.swift */,
+			);
+			path = TestSupport;
+			sourceTree = "<group>";
+		};
+		F915C0A01EAE83F200199ED5 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F915C0A11EAE83F200199ED5 /* DeferredTests */,
+				F915C0AA1EAE83F200199ED5 /* Info.plist */,
+				F915C0AB1EAE83F200199ED5 /* LinuxMain.swift */,
+				F915C0AC1EAE83F200199ED5 /* ResultTests */,
+				F915C0B01EAE83F200199ED5 /* TaskTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		F915C0A11EAE83F200199ED5 /* DeferredTests */ = {
+			isa = PBXGroup;
+			children = (
+				F915C0A21EAE83F200199ED5 /* DeferredTests.swift */,
+				F915C0A31EAE83F200199ED5 /* ExistentialFutureTests.swift */,
+				F915C0A41EAE83F200199ED5 /* FutureCustomExecutorTests.swift */,
+				F915C0A51EAE83F200199ED5 /* FutureIgnoreTests.swift */,
+				F915C0A61EAE83F200199ED5 /* FutureTests.swift */,
+				F915C0A71EAE83F200199ED5 /* LockingTests.swift */,
+				F915C0A81EAE83F200199ED5 /* ProtectedTests.swift */,
+				F915C0A91EAE83F200199ED5 /* SwiftBugTests.swift */,
+			);
+			path = DeferredTests;
+			sourceTree = "<group>";
+		};
+		F915C0AC1EAE83F200199ED5 /* ResultTests */ = {
+			isa = PBXGroup;
+			children = (
+				F915C0AD1EAE83F200199ED5 /* ResultRecoveryTests.swift */,
+				F915C0AE1EAE83F200199ED5 /* TaskResultTests.swift */,
+				F915C0AF1EAE83F200199ED5 /* VoidResultTests.swift */,
+			);
+			path = ResultTests;
+			sourceTree = "<group>";
+		};
+		F915C0B01EAE83F200199ED5 /* TaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				F915C0B11EAE83F200199ED5 /* TaskComprehensiveTests.swift */,
+				F915C0B21EAE83F200199ED5 /* TaskGroupTests.swift */,
+				F915C0B31EAE83F200199ED5 /* TaskTests.swift */,
+				F915C0B41EAE83F200199ED5 /* TaskWorkItemTests.swift */,
+			);
+			path = TaskTests;
+			sourceTree = "<group>";
+		};
 		F9E029841E9FE34E002A1954 /* Freddy */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +715,7 @@
 		F9F820A31E9E99050015E286 = {
 			isa = PBXGroup;
 			children = (
+				F915C0511EAE83F200199ED5 /* Deferred */,
 				F9F820AE1E9E99050015E286 /* SWAPI */,
 				F9F820C31E9E99050015E286 /* SWAPITests */,
 				F9F820CE1E9E99050015E286 /* SWAPIUITests */,
@@ -386,20 +737,26 @@
 		F9F820AE1E9E99050015E286 /* SWAPI */ = {
 			isa = PBXGroup;
 			children = (
+				F9F820B31E9E99050015E286 /* Main.storyboard */,
+				F970A5C21EB3C2C900F4BF02 /* Planets.storyboard */,
+				F970A5BF1EB3C29400F4BF02 /* People.storyboard */,
+				F970A5BB1EB3B66B00F4BF02 /* PlanetDetailViewController.swift */,
+				F970A5B91EB3B52600F4BF02 /* PersonDetailViewController.swift */,
 				F9E029EB1EA5118F002A1954 /* Models */,
-				F9E029EC1EA5147B002A1954 /* PlanetStore.swift */,
 				F9F820DF1E9EBB160015E286 /* MockURLSession.swift */,
 				F9F820E11E9EBB6A0015E286 /* MockURLSessionDataTask.swift */,
 				F9F820DD1E9E9A340015E286 /* HTTPClient.swift */,
-				F9F820AF1E9E99050015E286 /* AppDelegate.swift */,
+				F970A5AC1EB3A88600F4BF02 /* RootViewController.swift */,
+				F970A5BD1EB3BC4200F4BF02 /* SegueHandler.swift */,
+				F970A5B51EB3AE4300F4BF02 /* PlanetsViewController.swift */,
+				F970A5B71EB3B0D300F4BF02 /* AlertPresenter.swift */,
 				F9F820B11E9E99050015E286 /* PeopleViewController.swift */,
-				F9F820B31E9E99050015E286 /* Main.storyboard */,
 				F9E029DA1EA003D9002A1954 /* PeopleStore.swift */,
+				F9E029EC1EA5147B002A1954 /* PlanetStore.swift */,
+				F9F820AF1E9E99050015E286 /* AppDelegate.swift */,
 				F9F820B61E9E99050015E286 /* Assets.xcassets */,
 				F9F820B81E9E99050015E286 /* LaunchScreen.storyboard */,
 				F9F820BB1E9E99050015E286 /* Info.plist */,
-				F9E029EE1EA529CB002A1954 /* PeopleOperation.swift */,
-				F9E029F01EA53D30002A1954 /* HomeWorldOperation.swift */,
 			);
 			path = SWAPI;
 			sourceTree = "<group>";
@@ -440,6 +797,7 @@
 			);
 			dependencies = (
 				F9E029D81E9FE394002A1954 /* PBXTargetDependency */,
+				F915C0C41EAE841D00199ED5 /* PBXTargetDependency */,
 			);
 			name = SWAPI;
 			productName = SWAPI;
@@ -524,6 +882,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = F915C06D1EAE83F200199ED5 /* Products */;
+					ProjectRef = F915C06C1EAE83F200199ED5 /* Deferred.xcodeproj */;
+				},
+				{
 					ProductGroup = F9E029961E9FE34E002A1954 /* Products */;
 					ProjectRef = F9E029951E9FE34E002A1954 /* Freddy.xcodeproj */;
 				},
@@ -538,6 +900,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		F915C0B81EAE83F200199ED5 /* Deferred.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Deferred.framework;
+			remoteRef = F915C0B71EAE83F200199ED5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F915C0BA1EAE83F200199ED5 /* DeferredTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = DeferredTests.xctest;
+			remoteRef = F915C0B91EAE83F200199ED5 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		F9E029C81E9FE34E002A1954 /* Freddy.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -595,8 +971,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9F820BA1E9E99050015E286 /* LaunchScreen.storyboard in Resources */,
+				F970A5C11EB3C29400F4BF02 /* People.storyboard in Resources */,
 				F9F820B71E9E99050015E286 /* Assets.xcassets in Resources */,
 				F9F820B51E9E99050015E286 /* Main.storyboard in Resources */,
+				F970A5C41EB3C2C900F4BF02 /* Planets.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,17 +1001,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F970A5BC1EB3B66B00F4BF02 /* PlanetDetailViewController.swift in Sources */,
+				F970A5AD1EB3A88600F4BF02 /* RootViewController.swift in Sources */,
 				F9E029DB1EA003D9002A1954 /* PeopleStore.swift in Sources */,
 				F9F820E71E9ECF6D0015E286 /* Person.swift in Sources */,
 				F9F820B21E9E99050015E286 /* PeopleViewController.swift in Sources */,
 				F9E029E11EA4FFED002A1954 /* Planet.swift in Sources */,
-				F9E029EF1EA529CB002A1954 /* PeopleOperation.swift in Sources */,
+				F970A5BE1EB3BC4200F4BF02 /* SegueHandler.swift in Sources */,
 				F9F820E21E9EBB6A0015E286 /* MockURLSessionDataTask.swift in Sources */,
-				F9E029F11EA53D30002A1954 /* HomeWorldOperation.swift in Sources */,
 				F9E029ED1EA5147B002A1954 /* PlanetStore.swift in Sources */,
 				F9F820E01E9EBB160015E286 /* MockURLSession.swift in Sources */,
 				F9F820B01E9E99050015E286 /* AppDelegate.swift in Sources */,
+				F970A5B61EB3AE4300F4BF02 /* PlanetsViewController.swift in Sources */,
+				F970A5BA1EB3B52600F4BF02 /* PersonDetailViewController.swift in Sources */,
 				F9F820DE1E9E9A340015E286 /* HTTPClient.swift in Sources */,
+				F970A5B81EB3B0D300F4BF02 /* AlertPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -656,6 +1038,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F915C0C41EAE841D00199ED5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Deferred;
+			targetProxy = F915C0C31EAE841D00199ED5 /* PBXContainerItemProxy */;
+		};
 		F9E029D81E9FE394002A1954 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MobileFreddy;
@@ -674,6 +1061,22 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F970A5BF1EB3C29400F4BF02 /* People.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F970A5C01EB3C29400F4BF02 /* Base */,
+			);
+			name = People.storyboard;
+			sourceTree = "<group>";
+		};
+		F970A5C21EB3C2C900F4BF02 /* Planets.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F970A5C31EB3C2C900F4BF02 /* Base */,
+			);
+			name = Planets.storyboard;
+			sourceTree = "<group>";
+		};
 		F9F820B31E9E99050015E286 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

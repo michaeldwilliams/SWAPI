@@ -8,10 +8,45 @@
 
 import Foundation
 import Freddy
+import Deferred
 
 class PlanetStore {
     private(set) var planets = [Planet]()
-    private var client = HTTPClient()
+    private var client: HTTPClient
+    
+    init(client: HTTPClient) {
+        self.client = client
+    }
+    
+    private func addPlanets(_ planets: [Planet]) {
+        for planet in planets {
+            add(planet)
+        }
+    }
+    
+    func getPlanets() -> Task<[Planet]> {
+        let deferred = Deferred<TaskResult<[Planet]>>()
+        
+        let urlSessionTask = client.get(.planets) { (data, response, error) in
+            guard let data = data else {
+                deferred.fail(with: HTTPClient.Error.noData)
+                return
+            }
+            do {
+                let json = try JSON(data: data)
+                let planets = try json.decodedArray(at: "results", type: Planet.self)
+                self.addPlanets(planets)
+                deferred.succeed(with: planets)
+            } catch {
+                deferred.fail(with: error)
+            }
+        }
+        return Task(deferred, cancellation: {
+            print("Cancelling `getPlanets()`.")
+            urlSessionTask.cancel()
+        })
+
+    }
     
     private func add(_ planet:Planet) {
         guard !planets.contains(planet) else { return }
@@ -22,54 +57,38 @@ class PlanetStore {
         return planets.filter({$0.url == person.homeWorldURL}).first
     }
     
-    func fetchPlanet(for person: Person, completion: @escaping (Planet?, Error?) -> Void) {
+    func fetchPlanet(for person: Person) -> Deferred<Task<Planet>.Result> {
+        let deferred = Deferred<Task<Planet>.Result>()
         if let planet = cachedPlanet(for: person) {
-            completion(planet, nil)
-            return
+            deferred.succeed(with: planet)
+            return deferred
         }
         
         client.fetchHomeWorld(for: person) { (data, response, error) in
-            guard let data = data else { return }
+            guard let data = data else {
+                deferred.fail(with: HTTPClient.Error.noData)
+                return
+            }
             do {
                 let json = try JSON(data: data)
                 let planet = try Planet(json: json)
                 self.add(planet)
-                completion(planet, nil)
+                deferred.succeed(with: planet)
             } catch {
-                completion(nil, error)
+                deferred.fail(with: error)
             }
         }
+        return deferred
     }
 
-    func fetchPlanets(for people: [Person], completion: @escaping ([Planet], [Error]) -> Void) {
+    func fetchPlanets(for people: [Person]) -> Task<Void> {
         let uniquePeople = peopleWithUniqueHomeWorlds(from: people)
-        
-        var planets = [Planet]()
-        var errors = [Error]()
-        
-        let dg = DispatchGroup()
-        for person in uniquePeople {
-            dg.enter()
-            fetchPlanet(for: person) { (planet, error) in
-                if let error = error {
-                    errors.append(error)
-                    dg.leave()
-                    return
-                }
-                guard let planet = planet else {
-                    dg.leave()
-                    return
-                }
-                planets.append(planet)
-                dg.leave()
-            }
-        }
-        dg.notify(queue: .main) {
-            completion(planets, errors)
-        }
-        
+        let deferredPlanets = uniquePeople.map { fetchPlanet(for: $0) }
+        return deferredPlanets.allSucceeded()
     }
-
+    
+    
+    
 
 }
 

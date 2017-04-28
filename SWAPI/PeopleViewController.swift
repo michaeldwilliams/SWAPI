@@ -7,48 +7,44 @@
 //
 
 
-import Foundation
 import UIKit
+import Deferred
 
-class PeopleViewController: UITableViewController {
+class PeopleViewController: UITableViewController, AlertPresenter {
 
     let cellID = "UITableViewCell"
-    let peopleStore = PeopleStore()
-    let planetStore = PlanetStore()
+    fileprivate var peopleStore: PeopleStore!
+    fileprivate var planetStore: PlanetStore!
+    var futurePeople: Task<[Person]>? = nil
+    
+    func configure(peopleStore:PeopleStore, planetStore:PlanetStore) {
+        self.peopleStore = peopleStore
+        self.planetStore = planetStore
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        futurePeople = peopleStore.getPeople()
         
-        let queue = OperationQueue()
-        let peopleOperation = PeopleOperation(peopleStore: peopleStore) { (people, error) in
-            if let error = error {
-                self.present(error: error)
-                return
-            }
-            
-            guard people != nil else { return }
-            
+        let futurePlanets = futurePeople?.andThen(upon: .any()) { (people) -> Task<Void> in
+            return self.planetStore.fetchPlanets(for: people)
         }
         
-        let homeWorldOperation = HomeWorldOperation(peopleStore: peopleStore, planetStore: planetStore) { (planets, errors) in
-            guard errors.isEmpty else {
-                errors.forEach { self.present(error: $0) }
-                return
-            }
-        }
-        
-        homeWorldOperation.addDependency(peopleOperation)
-        
-        let completionOperation = BlockOperation {
-            OperationQueue.main.addOperation {
+        futurePlanets?.upon(.main) { (result) in
+            switch result {
+            case .success:
                 self.tableView.reloadData()
+            case .failure(let error):
+                self.present(title: "Error getting people", error: error)
             }
         }
-        completionOperation.addDependency(homeWorldOperation)
-        
-        queue.addOperations([peopleOperation, homeWorldOperation, completionOperation], waitUntilFinished: false)
     }
-
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        futurePeople?.cancel()
+    }
 }
 
 
@@ -69,15 +65,26 @@ extension PeopleViewController {
         return cell
     }
     
-//MARK: - Present Error Alerts to UI
-    func present(error: Swift.Error) {
-        let alertController = UIAlertController(title: "Error getting people", message: "\(error)", preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
-        alertController.addAction(cancelAction)
-        OperationQueue.main.addOperation {
-            self.present(alertController, animated: true, completion: nil)
+}
+
+extension PeopleViewController {
+    enum ViewControllerSegue: String {
+        case showPersonDetails
+    }
+}
+
+extension PeopleViewController: SegueHandler {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segueIdentifierCase(for: segue) {
+        case .showPersonDetails:
+            guard let indexPath = tableView.indexPathForSelectedRow else {
+                assertionFailure("showPersonDetails segue triggered with no selected index path")
+                return }
+            let person = peopleStore.people[indexPath.row]
+            let homeworld = planetStore.cachedPlanet(for: person)
+            let destination = segue.destination as! PersonDetailViewController
+            destination.configure(person: person, homeWorldName: homeworld?.name)
         }
     }
-    
-    
 }
+

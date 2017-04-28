@@ -10,6 +10,7 @@ import Foundation
 
 protocol MockURLSessionDataTask {
     func resume()
+    func cancel()
 }
 
 extension URLSessionDataTask: MockURLSessionDataTask {}

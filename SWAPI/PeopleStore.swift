@@ -7,11 +7,16 @@
 //
 
 import Foundation
+import Deferred
 import Freddy
 
 class PeopleStore {
     private(set) var people = [Person]()
-    private let client = HTTPClient()
+    private let client: HTTPClient
+    
+    init(client: HTTPClient) {
+        self.client = client
+    }
     
     private func add(_ person: Person) {
         guard !people.contains(person) else { return }
@@ -24,10 +29,11 @@ class PeopleStore {
         }
     }
     
-    func getPeople(completion: @escaping ([Person], Error?) -> Void) {
-        client.get(.people) { (data, response, error) in
+    func getPeople() -> Task<[Person]> {
+        let deferred = Deferred<Task<[Person]>.Result>()
+        let urlSessionTask = client.get(.people) { (data, response, error) in
             guard let data = data else {
-                completion([], HTTPClient.Error.noData)
+                deferred.fail(with: HTTPClient.Error.noData)
                 return
             }
             
@@ -35,10 +41,14 @@ class PeopleStore {
                 let json = try JSON(data:data)
                 let people = try json.decodedArray(at: "results", type: Person.self)
                 self.addPeople(people)
-                completion(people, nil)
+                deferred.succeed(with: people)
             } catch {
-                completion([], error)
+                deferred.fail(with: error)
             }
         }
+        return Task(deferred, cancellation: {
+            print("Cancelling `getPeople()`.")
+            urlSessionTask.cancel()
+        })
     }
 }

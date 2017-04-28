@@ -1,7 +1,18 @@
 {
   "autoPin": true,
   "pins": [
-
+    {
+      "package": "Deferred",
+      "reason": null,
+      "repositoryURL": "git@github.com:bignerdranch/Deferred.git",
+      "version": "3.0.0-rc.2"
+    },
+    {
+      "package": "Freddy",
+      "reason": null,
+      "repositoryURL": "git@github.com:bignerdranch/Freddy.git",
+      "version": "3.0.2"
+    }
   ],
   "version": 1
 }

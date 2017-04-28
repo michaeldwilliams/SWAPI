@@ -8,22 +8,29 @@
 
 import Foundation
 struct HTTPClient {
-    let session: MockURLSession
+    private let session: MockURLSession
     
     init(session:MockURLSession = URLSession.shared) {
         self.session = session
     }
     
-    func get(_ route:Route, completion: @escaping (Data?, URLResponse?, Swift.Error?) -> Void) {
-        guard let url = URL(string: route.rawValue) else { return }
+    @discardableResult
+    func get(_ route:Route, completion: @escaping (Data?, URLResponse?, Swift.Error?) -> Void) -> MockURLSessionDataTask {
+        guard let url = URL(string: route.rawValue) else {
+            fatalError("Failed to unwrap \(route)")
+        }
         let task = session.dataTask(with: url, completionHandler: completion)
         task.resume()
+        return task
     }
     
-    func fetchHomeWorld(for person:Person, completion: @escaping (Data?, URLResponse?, Swift.Error?) -> Void) {
+    @discardableResult
+    func fetchHomeWorld(for person:Person, completion: @escaping (Data?, URLResponse?, Swift.Error?) -> Void) -> MockURLSessionDataTask {
         let task = session.dataTask(with: person.homeWorldURL, completionHandler: completion)
         task.resume()
+        return task
     }
+    
 }
 
 extension HTTPClient {
