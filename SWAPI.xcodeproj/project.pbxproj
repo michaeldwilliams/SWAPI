@@ -17,6 +17,15 @@
 		F970A5BE1EB3BC4200F4BF02 /* SegueHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5BD1EB3BC4200F4BF02 /* SegueHandler.swift */; };
 		F970A5C11EB3C29400F4BF02 /* People.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F970A5BF1EB3C29400F4BF02 /* People.storyboard */; };
 		F970A5C41EB3C2C900F4BF02 /* Planets.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F970A5C21EB3C2C900F4BF02 /* Planets.storyboard */; };
+		F970A5C81EB782E500F4BF02 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5C71EB782E500F4BF02 /* NibLoadable.swift */; };
+		F970A5D11EB784C500F4BF02 /* TableViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5D01EB784C500F4BF02 /* TableViewRow.swift */; };
+		F970A5D31EB786C200F4BF02 /* ExistentialTableViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5D21EB786C200F4BF02 /* ExistentialTableViewRow.swift */; };
+		F970A5D61EB79C2100F4BF02 /* TwoLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5D41EB79C2100F4BF02 /* TwoLabelTableViewCell.swift */; };
+		F970A5D71EB79C2100F4BF02 /* TwoLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F970A5D51EB79C2100F4BF02 /* TwoLabelTableViewCell.xib */; };
+		F970A5E01EB79DA500F4BF02 /* ThreeLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5DE1EB79DA500F4BF02 /* ThreeLabelTableViewCell.swift */; };
+		F970A5E11EB79DA500F4BF02 /* ThreeLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F970A5DF1EB79DA500F4BF02 /* ThreeLabelTableViewCell.xib */; };
+		F970A5E31EB79F3B00F4BF02 /* TwoLabelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5E21EB79F3B00F4BF02 /* TwoLabelRow.swift */; };
+		F970A5E51EB79FE700F4BF02 /* ThreeLabelRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F970A5E41EB79FE700F4BF02 /* ThreeLabelRow.swift */; };
 		F9E029D51E9FE394002A1954 /* Freddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E029CC1E9FE34E002A1954 /* Freddy.framework */; };
 		F9E029D61E9FE394002A1954 /* Freddy.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F9E029CC1E9FE34E002A1954 /* Freddy.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F9E029DB1EA003D9002A1954 /* PeopleStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E029DA1EA003D9002A1954 /* PeopleStore.swift */; };
@@ -235,6 +244,15 @@
 		F970A5BD1EB3BC4200F4BF02 /* SegueHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandler.swift; sourceTree = "<group>"; };
 		F970A5C01EB3C29400F4BF02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/People.storyboard; sourceTree = "<group>"; };
 		F970A5C31EB3C2C900F4BF02 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Planets.storyboard; sourceTree = "<group>"; };
+		F970A5C71EB782E500F4BF02 /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		F970A5D01EB784C500F4BF02 /* TableViewRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewRow.swift; sourceTree = "<group>"; };
+		F970A5D21EB786C200F4BF02 /* ExistentialTableViewRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExistentialTableViewRow.swift; sourceTree = "<group>"; };
+		F970A5D41EB79C2100F4BF02 /* TwoLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoLabelTableViewCell.swift; sourceTree = "<group>"; };
+		F970A5D51EB79C2100F4BF02 /* TwoLabelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TwoLabelTableViewCell.xib; sourceTree = "<group>"; };
+		F970A5DE1EB79DA500F4BF02 /* ThreeLabelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeLabelTableViewCell.swift; sourceTree = "<group>"; };
+		F970A5DF1EB79DA500F4BF02 /* ThreeLabelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeLabelTableViewCell.xib; sourceTree = "<group>"; };
+		F970A5E21EB79F3B00F4BF02 /* TwoLabelRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwoLabelRow.swift; sourceTree = "<group>"; };
+		F970A5E41EB79FE700F4BF02 /* ThreeLabelRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeLabelRow.swift; sourceTree = "<group>"; };
 		F9E029851E9FE34E002A1954 /* .cocoadocs.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .cocoadocs.yml; sourceTree = "<group>"; };
 		F9E029861E9FE34E002A1954 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		F9E029871E9FE34E002A1954 /* .ruby-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".ruby-version"; sourceTree = "<group>"; };
@@ -568,6 +586,16 @@
 			path = TaskTests;
 			sourceTree = "<group>";
 		};
+		F970A5E61EB7AA6100F4BF02 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F9F820B31E9E99050015E286 /* Main.storyboard */,
+				F970A5C21EB3C2C900F4BF02 /* Planets.storyboard */,
+				F970A5BF1EB3C29400F4BF02 /* People.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		F9E029841E9FE34E002A1954 /* Freddy */ = {
 			isa = PBXGroup;
 			children = (
@@ -737,12 +765,19 @@
 		F9F820AE1E9E99050015E286 /* SWAPI */ = {
 			isa = PBXGroup;
 			children = (
-				F9F820B31E9E99050015E286 /* Main.storyboard */,
-				F970A5C21EB3C2C900F4BF02 /* Planets.storyboard */,
-				F970A5BF1EB3C29400F4BF02 /* People.storyboard */,
+				F9E029EB1EA5118F002A1954 /* Models */,
+				F970A5E61EB7AA6100F4BF02 /* Storyboards */,
+				F970A5C71EB782E500F4BF02 /* NibLoadable.swift */,
+				F970A5D01EB784C500F4BF02 /* TableViewRow.swift */,
+				F970A5D21EB786C200F4BF02 /* ExistentialTableViewRow.swift */,
+				F970A5D41EB79C2100F4BF02 /* TwoLabelTableViewCell.swift */,
+				F970A5D51EB79C2100F4BF02 /* TwoLabelTableViewCell.xib */,
+				F970A5DE1EB79DA500F4BF02 /* ThreeLabelTableViewCell.swift */,
+				F970A5DF1EB79DA500F4BF02 /* ThreeLabelTableViewCell.xib */,
+				F970A5E21EB79F3B00F4BF02 /* TwoLabelRow.swift */,
+				F970A5E41EB79FE700F4BF02 /* ThreeLabelRow.swift */,
 				F970A5BB1EB3B66B00F4BF02 /* PlanetDetailViewController.swift */,
 				F970A5B91EB3B52600F4BF02 /* PersonDetailViewController.swift */,
-				F9E029EB1EA5118F002A1954 /* Models */,
 				F9F820DF1E9EBB160015E286 /* MockURLSession.swift */,
 				F9F820E11E9EBB6A0015E286 /* MockURLSessionDataTask.swift */,
 				F9F820DD1E9E9A340015E286 /* HTTPClient.swift */,
@@ -972,9 +1007,11 @@
 			files = (
 				F9F820BA1E9E99050015E286 /* LaunchScreen.storyboard in Resources */,
 				F970A5C11EB3C29400F4BF02 /* People.storyboard in Resources */,
+				F970A5E11EB79DA500F4BF02 /* ThreeLabelTableViewCell.xib in Resources */,
 				F9F820B71E9E99050015E286 /* Assets.xcassets in Resources */,
 				F9F820B51E9E99050015E286 /* Main.storyboard in Resources */,
 				F970A5C41EB3C2C900F4BF02 /* Planets.storyboard in Resources */,
+				F970A5D71EB79C2100F4BF02 /* TwoLabelTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1001,21 +1038,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F970A5D61EB79C2100F4BF02 /* TwoLabelTableViewCell.swift in Sources */,
 				F970A5BC1EB3B66B00F4BF02 /* PlanetDetailViewController.swift in Sources */,
 				F970A5AD1EB3A88600F4BF02 /* RootViewController.swift in Sources */,
 				F9E029DB1EA003D9002A1954 /* PeopleStore.swift in Sources */,
 				F9F820E71E9ECF6D0015E286 /* Person.swift in Sources */,
 				F9F820B21E9E99050015E286 /* PeopleViewController.swift in Sources */,
 				F9E029E11EA4FFED002A1954 /* Planet.swift in Sources */,
+				F970A5E01EB79DA500F4BF02 /* ThreeLabelTableViewCell.swift in Sources */,
 				F970A5BE1EB3BC4200F4BF02 /* SegueHandler.swift in Sources */,
 				F9F820E21E9EBB6A0015E286 /* MockURLSessionDataTask.swift in Sources */,
 				F9E029ED1EA5147B002A1954 /* PlanetStore.swift in Sources */,
+				F970A5C81EB782E500F4BF02 /* NibLoadable.swift in Sources */,
 				F9F820E01E9EBB160015E286 /* MockURLSession.swift in Sources */,
 				F9F820B01E9E99050015E286 /* AppDelegate.swift in Sources */,
+				F970A5D11EB784C500F4BF02 /* TableViewRow.swift in Sources */,
 				F970A5B61EB3AE4300F4BF02 /* PlanetsViewController.swift in Sources */,
+				F970A5E51EB79FE700F4BF02 /* ThreeLabelRow.swift in Sources */,
 				F970A5BA1EB3B52600F4BF02 /* PersonDetailViewController.swift in Sources */,
 				F9F820DE1E9E9A340015E286 /* HTTPClient.swift in Sources */,
+				F970A5E31EB79F3B00F4BF02 /* TwoLabelRow.swift in Sources */,
 				F970A5B81EB3B0D300F4BF02 /* AlertPresenter.swift in Sources */,
+				F970A5D31EB786C200F4BF02 /* ExistentialTableViewRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,16 +8,11 @@
 
 import UIKit
 
-class PlanetDetailViewController: UIViewController {
-    
-    @IBOutlet private var nameLabel: UILabel!
-    @IBOutlet private var climateLabel: UILabel!
-    @IBOutlet private var diameterLabel: UILabel!
-    @IBOutlet private var terrainLabel: UILabel!
-    @IBOutlet private var populationLabel: UILabel!
-    
+class PlanetDetailViewController: UITableViewController {
     
     private var planet: Planet!
+    fileprivate var rows: [AnyTableViewRow] = []
+    
     
     func configure(planet: Planet) {
         self.planet = planet
@@ -26,19 +21,40 @@ class PlanetDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        nameLabel.text = planet.name
-        climateLabel.text = planet.climate
-        diameterLabel.text = "\(planet.diameter) Km"
-        terrainLabel.text = planet.terrain
-        var populationString: String
+        rows.append(AnyTableViewRow(TwoLabelRow(title: "Name:", content: planet.name)))
+        rows.append(AnyTableViewRow(TwoLabelRow(title: "Climate:", content: planet.climate)))
+        rows.append(AnyTableViewRow(ThreeLabelRow(title: "Diameter:",
+                                                  content: "\(planet.diameter)",
+            units: "Km")))
+        rows.append(AnyTableViewRow(TwoLabelRow(title: "Terrain:", content: planet.terrain)))
+        let populationCount: String
+        let populationUnits: String
         if planet.population == 0 {
-            populationString = "Unknown"
+            populationCount = "Unknown"
+            populationUnits = ""
         } else if planet.population == 1 {
-            populationString = "1 lifeform"
+            populationCount = "1"
+            populationUnits = "lifeform"
         } else {
-            populationString = "\(planet.population) lifeforms"
+            populationCount = "\(planet.population)"
+            populationUnits = "lifeforms"
         }
-        populationLabel.text = populationString
+        rows.append(AnyTableViewRow(ThreeLabelRow(title: "Population:",
+                                                  content: populationCount,
+                                                  units: populationUnits)))
+        tableView.registerRow(type: TwoLabelRow.self)
+        tableView.registerRow(type: ThreeLabelRow.self)
         
+    }
+}
+
+extension PlanetDetailViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return rows.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let row = rows[indexPath.row]
+        return row.dequeueAndConfigureCell(tableView: tableView, indexPath: indexPath)
     }
 }

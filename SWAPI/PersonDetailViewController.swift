@@ -8,20 +8,12 @@
 
 import UIKit
 
-class PersonDetailViewController: UIViewController {
+class PersonDetailViewController: UITableViewController {
     
-    @IBOutlet private var nameLabel: UILabel!
-    @IBOutlet private var heightLabel: UILabel!
-    @IBOutlet private var massLabel: UILabel!
-    @IBOutlet private var hairColorLabel: UILabel!
-    @IBOutlet private var skinColorLabel: UILabel!
-    @IBOutlet private var eyeColorLabel: UILabel!
-    @IBOutlet private var birthYearLabel: UILabel!
-    @IBOutlet private var genderLabel: UILabel!
-    @IBOutlet private var homeWorldLabel: UILabel!
-    
+
     private var person: Person!
     private var homeWorldName: String?
+    fileprivate var rows: [AnyTableViewRow] = []
     
     func configure(person: Person, homeWorldName: String?) {
         self.person = person
@@ -32,14 +24,36 @@ class PersonDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        nameLabel.text = person.name
-        heightLabel.text = "\(person.height) cm"
-        massLabel.text = "\(person.mass) Kg"
-        hairColorLabel.text = person.hairColor
-        skinColorLabel.text = person.skinColor
-        eyeColorLabel.text = person.eyeColor
-        birthYearLabel.text = person.birthYear
-        genderLabel.text = person.gender
-        homeWorldLabel.text = homeWorldName
+        rows.append(AnyTableViewRow(TwoLabelRow(title: "Name:", content: person.name)))
+        rows.append(AnyTableViewRow(ThreeLabelRow(title: "Height:", content: "\(person.height)", units: "cm")))
+        rows.append(AnyTableViewRow(ThreeLabelRow(title: "Mass:",
+                                                  content: "\(person.mass)",
+            units: "Kg")))
+        rows.append(AnyTableViewRow(TwoLabelRow(title: "Hair color:",
+                                                content: person.hairColor)))
+        rows.append(AnyTableViewRow(TwoLabelRow(title: "Skin color:",
+                                                content: person.skinColor)))
+        rows.append(AnyTableViewRow(TwoLabelRow(title: "Eye color:", content: person.eyeColor)))
+        rows.append(AnyTableViewRow(TwoLabelRow(title: "Birth year:",
+                                                content: person.birthYear)))
+        rows.append(AnyTableViewRow(TwoLabelRow(title: "Gender:", content: person.gender)))
+        if let homeworldName = homeWorldName {
+            rows.append(AnyTableViewRow(TwoLabelRow(title: "Homeworld:",
+                                                    content: homeworldName)))
+        }
+        tableView.registerRow(type: TwoLabelRow.self)
+        tableView.registerRow(type: ThreeLabelRow.self)
+
+    }
+}
+
+extension PersonDetailViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return rows.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let row = rows[indexPath.row]
+        return row.dequeueAndConfigureCell(tableView: tableView, indexPath: indexPath)
     }
 }
